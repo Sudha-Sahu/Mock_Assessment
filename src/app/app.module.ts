@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 import {MatRadioModule} from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FinalsubmissionComponent } from './finalsubmission/finalsubmission.component';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FinalsubmissionComponent } from './finalsubmission/finalsubmission.comp
     BrowserAnimationsModule,
     MatFormFieldModule, MatInputModule,
     RouterModule, MatRadioModule,
-    FormsModule, ReactiveFormsModule
+    FormsModule, ReactiveFormsModule,
+    MatStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]

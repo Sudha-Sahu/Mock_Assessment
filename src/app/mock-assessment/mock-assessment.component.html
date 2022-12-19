@@ -1,45 +1,24 @@
-<!-- <div class="container">
-    <div class="card p-4">
-        <div class=" text-center card-title bg-dark text-light">
-            <h1>{{title}}</h1>
+<div class="parent" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="child" fxLayout="column" fxLayoutAlign="space-around start">
+        <div class="headtitle">
+            <h1>Online Assessment begins...</h1>
         </div>
-        <div class="card-body">
-            <form [formGroup] = "myForm" (ngSubmit)="onSubmit(myForm)">
-                <div *ngFor="let question of questions;let i = index">
-                    <h5>{{i+1}}.{{question.question}}</h5>
-                    <div class="form-check" [id]="question.q_id">
-                        <input class="form-check-input" type="radio" [name]="question.q_id" value="option_a" (change)="onChange(i,$event)">
-                        <label class="form-check-label" >{{question.option_a}}</label>
-                    </div>
-                    <div class="form-check" [id]="question.q_id">
-                        <input class="form-check-input" type="radio" [name]="question.q_id" value="option_b" (change)="onChange(i,$event)">
-                        <label class="form-check-label">{{question.option_b}}</label>
-                    </div>
-                    <div class="form-check" [id]="question.q_id">
-                        <input class="form-check-input" type="radio" [name]="question.q_id" value="option_c" (change)="onChange(i,$event)">
-                        <label class="form-check-label">{{question.option_c}}</label>
-                    </div>
-                    <div class="form-check" [id]="question.q_id">
-                        <input class="form-check-input" type="radio" [name]="question.q_id" value="option_d" (change)="onChange(i,$event)">
-                        <label class="form-check-label">{{question.option_d}}</label>
-                    </div>
-                </div>
-                <input type="submit" value="Submit" class="btn btn-block btn-success mt-4">
-            </form>
-        </div>
-    </div>
-</div> -->
-<div class="parent">
-    <div class="child">
-        <div>
-            <div class="card text-center p-5 ">
-                <div class="card-title">
-                    <h2>Online Assessment begins...</h2>
-                </div><br>
-                <div class="card-body">
-                    <p>Choose the correct answer:</p>
+        <div class="childbody">
+            <div>
+                <h2>Choose the correct answer:</h2>
+                <div class="qbody">
+                    
                     <div>
                         Q.1) What is the color of sky?
+                        <mat-radio-group aria-label="Select an option"><br>
+                            <mat-radio-button value="1">Option 1</mat-radio-button>
+                            <mat-radio-button value="2">Option 2</mat-radio-button>
+                            <mat-radio-button value="3">Option 3</mat-radio-button>
+                            <mat-radio-button value="4">Option 4</mat-radio-button>
+                        </mat-radio-group>
+                    </div>
+                    <div>
+                        Q.2) What is the color of sky?
                         <mat-radio-group aria-label="Select an option"><br>
                             <mat-radio-button value="1">Option 1</mat-radio-button>
                             <mat-radio-button value="2">Option 2</mat-radio-button>
@@ -48,7 +27,7 @@
                         </mat-radio-group>
                     </div>
                     <div>
-                        Q.1) What is the color of sky?
+                        Q.3) What is the color of sky?
                         <mat-radio-group aria-label="Select an option"><br>
                             <mat-radio-button value="1">Option 1</mat-radio-button>
                             <mat-radio-button value="2">Option 2</mat-radio-button>
@@ -57,7 +36,7 @@
                         </mat-radio-group>
                     </div>
                     <div>
-                        Q.1) What is the color of sky?
+                        Q.4) What is the color of sky?
                         <mat-radio-group aria-label="Select an option"><br>
                             <mat-radio-button value="1">Option 1</mat-radio-button>
                             <mat-radio-button value="2">Option 2</mat-radio-button>
@@ -66,16 +45,7 @@
                         </mat-radio-group>
                     </div>
                     <div>
-                        Q.1) What is the color of sky?
-                        <mat-radio-group aria-label="Select an option"><br>
-                            <mat-radio-button value="1">Option 1</mat-radio-button>
-                            <mat-radio-button value="2">Option 2</mat-radio-button>
-                            <mat-radio-button value="1">Option 3</mat-radio-button>
-                            <mat-radio-button value="2">Option 4</mat-radio-button>
-                        </mat-radio-group>
-                    </div>
-                    <div>
-                        Q.1) What is the color of sky?
+                        Q.5) What is the color of sky?
                         <mat-radio-group aria-label="Select an option"><br>
                             <mat-radio-button value="1">Option 1</mat-radio-button>
                             <mat-radio-button value="2">Option 2</mat-radio-button>
@@ -87,7 +57,13 @@
                 </div>
                
             </div>
-            <button mat-stroked-button class="buttonclass">Submit</button>
+            
+            <div>
+                <button mat-stroked-button class="buttonclass">Back</button>
+                <button mat-stroked-button class="buttonclass">Reset</button>
+                <button mat-stroked-button class="buttonclass">Submit</button>
+            </div>
+            
         </div>
     </div>
 </div>

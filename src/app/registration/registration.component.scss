@@ -1,51 +1,27 @@
-
 .parent{
     height: 100%;
-    // background-color: rgb(250, 253, 250);
-    width: 50%;
-    margin-left: 400px;
 }
 .child{
-    height: 50%;
-    width: 80%;
-    border: 1px solid rgb(10, 10, 10);
+    height: 80%;
+    width: 30%;
+    border: 1px solid rgb(153, 152, 152);
     border-radius: 6px;
-    margin-left: 80px;
-    margin-top: 100px;
-   
+    background-color: rgb(236, 227, 227);
 }
-// .child1{
-//     background-color: pink;
-// }
-.button-row {
-    display: table-cell;
-    max-width: 600px;
-    justify-content: space-around;
-    background-color: aqua;
-}
+
 .input-data{
     margin-left: 10px;
     margin-top: 50px;
 }
-.form-data{
-    display: flex;
-    justify-content: space-around;
-}
+
 .buttonclass{
     background-color: rgb(177, 222, 248);
     border-radius: 6px;
     height: 30px;
     width: 100px;
-    // margin-left: 800px;
     margin-top: 40px
 }
 h1{
     font-weight: bold;
-    margin-left: 100px;
-}
-h3{
-    margin-left: 80px;
-}
-.mat-form-field{
-    width: 350px;
+    font-size: xx-large;
 }

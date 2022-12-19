@@ -1,66 +1,49 @@
-<div class="parent">
-    <div class="child">
-        <div class="child1">
+<div class="parent" fxLayout="column" fxLayoutAlign="center center">
+    <div class="child" fxLayout="column" fxLayoutAlign="center center">
+        <div class="child1" fxLayout="column" fxLayoutAlign="space-between start">
             <h1>General Online Assessment</h1>
-            
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
             <div class="input-data">
-                <h3>Register here...</h3>
-                <div class="form-data">
+                <h2>Register here...</h2>
+                <div class="form-data" fxLayout="row" fxLayoutAlign="space-around center">
                     Username:
                     <mat-form-field appearance="outline">
                         <mat-label></mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input type="text" formControlName="username">
+                        <mat-error>Enter your Username</mat-error>
                     </mat-form-field>
                 </div>
-                <div class="form-data">
+                <div class="form-data" fxLayout="row" fxLayoutAlign="space-around center">
                     Name:
                     <mat-form-field appearance="outline">
                         <mat-label></mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input type="text" formControlName="name">
+                        <mat-error>Enter your Name</mat-error>
                     </mat-form-field>
                 </div>
-                <div class="form-data">
+                <div class="form-data" fxLayout="row" fxLayoutAlign="space-around center">
                     Email:
                     <mat-form-field appearance="outline">
                         <mat-label></mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input type="email" formControlName="email">
+                        <mat-error>Enter your Email</mat-error>
                     </mat-form-field>
-                </div><br>
-                <div class="form-data">
+                </div>
+                <div class="form-data" fxLayout="row" fxLayoutAlign="space-around center">
+                    Password:
+                    <mat-form-field appearance="outline">
+                        <mat-label></mat-label>
+                        <input type="password" formControlName="pass">
+                        <mat-error>Enter your password</mat-error>
+                    </mat-form-field>
+                </div>
+                <br>
+                <div class="form-data" fxLayout="row" fxLayoutAlign="space-between center">
                     <button mat-raised-button class="buttonclass">Register</button>
                     <button mat-raised-button class="buttonclass">Cancel</button>
                 </div>
             </div>
+            </form>
         </div>
-<!--         
-            <div class="forminput">
-                <mat-form-field appearance="outline">
-                    <mat-label>Email</mat-label>
-                    <input type="email" matInput formControlName="email">
-                    <mat-error>Enter your email</mat-error>
-                </mat-form-field>
-            </div>
-            <div class="forminput">
-                <mat-form-field appearance="outline">
-                    <mat-label>Password</mat-label>
-                    <input type="password" matInput formControlName="pass">
-                    <mat-error>Enter your password</mat-error>
-                </mat-form-field>
-            </div>
-            <div id="forgetbutton">
-                <button mat-button color="primary" routerLink="/forgetpass">Forgot password?</button>
-            </div><br>
-            <div>
-                <p style="color: rgb(88, 87, 87);">Not your computer? Use Guest mode to sign in privately.</p>
-                <button mat-button color="primary" class="learn">Learn more</button>
-            </div>
-            <div class="loginbutton"  fxLayout="row" fxLayoutAlign="space-between end">
-                <div id="createbutton">
-                    <button mat-button color="primary" routerLink="/signup">Create account</button>
-                </div>
-                <div id="createbutton">
-                    <button mat-raised-button color="primary">Next</button>
-                </div>
-            </div> -->
     </div>
 </div>
